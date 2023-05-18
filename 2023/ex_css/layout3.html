@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-color: rgba(201, 137, 243, 0.3);">
+    <style>
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .header {
+        flex:1;
+        height: 120px;
+        background-color: rgb(255, 7, 201);
+        color: white;
+      line-height: 120px; /* 세로 가운데 정렬을 위한 line-height 설정 */
+    }
+
+    .column {
+        display: flex;
+    }
+
+    .side {
+        flex: 3;
+        background-color: rgba(240, 12, 202, 0.705);
+        color: white;
+      line-height: 120px; /* 세로 가운데 정렬을 위한 line-height 설정 */
+    }
+
+    .contents {
+        flex: 1;
+        background-color: rgba(255, 0, 140, 0.6);
+        color: white;
+      line-height: 120px; /* 세로 가운데 정렬을 위한 line-height 설정 */
+    }
+
+    .footer {
+        flex:1;
+        height: 120px;
+        background-color: rgb(247, 89, 220);
+        color: white;
+      line-height: 120px; /* 세로 가운데 정렬을 위한 line-height 설정 */
+    }
+    </style>
+
+    <div class="container">
+    <div class="column">
+        <div class="side">
+        SIDE
+        </div>
+        <div class="column">
+        <div class="header">
+            HEADER
+        </div>
+        <div class="contents">
+            CONTENTS
+        </div>
+        <div class="footer">
+            FOOTER
+        </div>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

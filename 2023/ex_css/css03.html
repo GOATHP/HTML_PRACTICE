@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid #F25278;
+        }
+        div div{
+            border:1px dashed #FF1694;
+        }
+        /*상하좌우 전체*/
+        .el-1 {
+            padding: 10px;
+        }
+            /* 상단, 하단 */
+        .el-2 {
+            padding: 10px 20px;
+        }
+        .el-3 {
+            /* 상단, 좌우, 하단 */
+            padding: 10px 40px 60px;
+        }
+        .el-4 {
+            /* 상단, 우측, 하단, 좌측 */
+            padding: 10px 30px 50px 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <!--패딩-->
+    <div class="el-1">
+        <div>요소1</div>
+    </div>
+    <div class="el-2">요소2</div>
+    <div class="el-3">요소3</div>
+    
+    <div class="el-4">
+        <div>
+        요소4
+        </div>
+    </div>
+
+    <h2>마진영역</h2>
+    <style>
+        .inner-1 {
+            margin:10px;
+        }
+        .inner-2 {
+            margin:10px 30px 50px;
+        }
+        .inner-3 {
+            margin:10px 30px 50px 70px;
+        }
+    </style>
+    <div><!--안의 요소의 바깥쪽-->
+        <div class="inner-1">요소1</div>
+    </div>
+    <div><!--안의 요소의 바깥쪽-->
+        <div class="inner-2">요소2</div>
+    </div>
+    <div><!--안의 요소의 바깥쪽-->
+        <div class="inner-3">요소3</div>
+    </div>
+
+    <hr>
+    <h2>마진영역2</h2>
+    <style>
+        .inner-9{
+            margin: -10px;
+        }
+        .inner-10{
+                margin-top: -10px;
+            }
+        .outer{
+            border: 1px dashed red;
+            width : 200px;
+            height : 200px;
+        }
+
+        .inner{
+            border: 1px solid blue;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <div>
+        <!--안에 요소의 바깥쪽-->
+        <div class="inner-9">요소9</div>
+    </div>
+    <br><br>
+    <div>
+        <!--안에 요소의 바깥쪽-->
+        <div class="inner-10">요소10</div>
+    </div>
+</body>
+
+</html>
